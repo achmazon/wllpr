@@ -1,0 +1,10 @@
+
+Unzip file command
+>>> tar -xf wllpr.zip
+
+Copy file command
+>>> copy bgbob.jpg C:\ProgramData\bgbob.jpg
+
+Change background wallpaper
+(buat ganti) >> reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d C:\ProgramData\bgbob.jpg /f
+(buat aplly) >> RUNDLL32.EXE USER32.DLL,UpdatePerUserSystemParameters 1, True
